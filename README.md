@@ -1,0 +1,1 @@
+JS practice - Kanban table with basic html and css
