@@ -1,0 +1,115 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #474359;
+	font-family: 'Lato', sans-serif;
+}
+
+.card-placeholder {
+	border: 1px dashed green;
+	height: 100px;
+	opacity: 0.5;
+	background-color: #fff;
+	border-radius: 10px;
+}
+
+.board {
+	h1 {
+		text-align: center;
+		padding: 25px 0;
+		text-transform: uppercase;
+		font-size: 32px;
+		letter-spacing: 1px;
+		font-weight: 700;
+		text-shadow: 0 0 1px #fff, 0 0 2px blue;
+	}
+	.create-column {
+		display: block;
+		margin: 0 auto;
+		font-size: 20px;
+		padding: 8px;
+		background-color: #222;
+		color: #fff;
+		border: none;
+		border-radius: 5px;
+		margin-bottom: 20px;
+	}
+	.column-container {
+		width: 100%;
+		padding-top: 25px;
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		.column {
+			min-width: 31vw;
+			background-color: #130E26;
+			color: #fff;
+			border-radius: 10px;
+			min-height: 400px;
+			margin-bottom: 25px;
+			position: relative;
+			.column-title {
+				text-align: center;
+				padding: 10px;
+				color: orange;
+				margin-top: 30px;
+			}
+			ul {
+				list-style: none;
+				min-height: 100px;
+				padding-bottom: 75px;
+				width: 90%;
+				margin: 0 auto;
+				margin-top: 15px;
+			}
+			.btn-delete {
+				position: absolute;
+				top: 5px;
+				right: 5px;
+				width: 20px;
+				height: 20px;
+				border-radius: 50%;
+				line-height: 20px;
+				font-size: 16px;
+				font-weight: 700;
+				color: red;
+				background-color: black;
+				border: 1px solid white;
+			}
+			.add-card {
+				position: absolute;
+				top: 5px;
+				left: 5px;
+				border-radius: 10px 0 0 0;
+				height: 20px;
+				width: 80px;
+				font-weight: bold;
+				background-color: #fff;
+				border: 1px solid red;
+				&:hover {
+					box-shadow: 0 0 10px #fff;
+				}
+				&:focus {
+					outline: 0;
+				}
+			}
+			.card {
+				border: 1px solid green;
+				position: relative;
+				min-height: 100px;
+				background-color: #ABB7CF;
+				color: #000;
+				font-weight: 700;
+				border-radius: 10px;
+				border: 2px solid #222;
+				.card-description {
+					padding-top: 20px;
+				}
+			}
+		}
+	}
+}
